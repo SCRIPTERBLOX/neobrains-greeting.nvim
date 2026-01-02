@@ -12,15 +12,6 @@ A Neovim plugin that creates a customizable greeting screen with centered conten
 
 ## Installation
 
-### Using Lazy.nvim (Local Development)
-
-```lua
-{
-  dir = vim.fn.stdpath("config") .. "/lua/neobrains-greeting",
-  name = "neobrains-greeting",
-}
-```
-
 ### Using Lazy.nvim (From GitHub)
 
 ```lua
@@ -28,33 +19,6 @@ A Neovim plugin that creates a customizable greeting screen with centered conten
   "SCRIPTERBLOX/neobrains-greeting",
   name = "neobrains-greeting",
 }
-```
-
-## Usage
-
-### Basic Usage
-
-```lua
-local greeting = require("neobrains-greeting")
-
--- Create greeting with default content
-greeting.create()
-```
-
-### Custom Content
-
-```lua
-local greeting = require("neobrains-greeting")
-
-greeting.create({
-  content = {
-    "Welcome to My IDE!",
-    "",
-    "Custom instructions here...",
-  },
-  buffer_name = "Welcome",
-  focus_tree_after = true,
-})
 ```
 
 ## Configuration Options
